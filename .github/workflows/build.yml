@@ -26,5 +26,5 @@ jobs:
         docker push $IMAGE_ID:$VERSION
     - name: TEST
       run: |
-        docker run -v `pwd`:`pwd` -w `pwd` newbuild bash -c "ncresnet.py -i code/demo.fasta  -o Human_coding.result "
+        docker run -v `pwd`:`pwd` -w `pwd` newbuild bash -c "NCResNet.py -i code/demo.fasta  -o Human_coding.result "
         head Human_coding.result
