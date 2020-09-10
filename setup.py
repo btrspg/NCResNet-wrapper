@@ -1,7 +1,7 @@
 from setuptools import setup
 
 
-scripts=['ncresnet.py']
+scripts=['NCResNet.py']
 
 setup(
     name='NCResNet-wrapper',
